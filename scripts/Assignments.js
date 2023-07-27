@@ -8,7 +8,7 @@ const walkers = getWalkers();
 const findWalker = (pet, walkers) => {
   let petWalker = null;
   for (const walker of walkers) {
-    if (walker.id === pet.walkerId) {
+    if (walker.id === pet.walkerId) { 
       petWalker = walker;
     }
   }
@@ -28,8 +28,6 @@ export const Assignments = () => {
             </li>
         `;
   }
-
   assignmentHTML += "</ul>";
-
   return assignmentHTML;
 };
