@@ -19,7 +19,6 @@ const findWalker = (pet, walkers) => {
 export const Assignments = () => {
   let assignmentHTML = "";
   assignmentHTML += "<ul>";
-
   for (const pet of pets) {
     const currentPetWalker = findWalker(pet, walkers);
     for (const city of cities) {

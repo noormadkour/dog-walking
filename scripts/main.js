@@ -1,9 +1,9 @@
-import { Walkers } from "./Walkers.js"
-import { CityList } from "./CityList.js"
-import { Assignments } from "./Assignments.js"
-import { RegisteredPets } from "./RegisteredPets.js"
+import { Walkers } from "./Walkers.js";
+import { CityList } from "./CityList.js";
+import { Assignments } from "./Assignments.js";
+import { RegisteredPets } from "./RegisteredPets.js";
 
-const mainContainer = document.querySelector("#container")
+const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
 <h1>DeShawns Dog Walking</h1>
@@ -21,12 +21,10 @@ const applicationHTML = `
         ${RegisteredPets()}
     </section>
 </article>
-
 <article class="assignments">
     <h2>Current Assignments</h2>
     ${Assignments()}
 </article>
-`
+`;
 
-mainContainer.innerHTML = applicationHTML
-
+mainContainer.innerHTML = applicationHTML;
