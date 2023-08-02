@@ -32,23 +32,9 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-export const removeDuplicates = (array) => {
-  return [...new Set(array)];
-};
-
 export const CityList = () => {
-  let cityArray = [];
   let citiesHTML = "<ol>";
-
-  for (const walker of walkers) {
-    for (const city of cities) {
-      if (walker.city_id === city.id) {
-        cityArray.push(city);
-      }
-    }
-  }
-  let uniqueCities = removeDuplicates(cityArray);
-  for (const city of uniqueCities) {
+  for (const city of cities) {
     citiesHTML += `<li data-cityname="${city.name}"
                        data-cityid="${city.id}"
                        data-type="city"

@@ -47,6 +47,10 @@ const database = {
       id: 10,
       name: "Pittsburgh",
     },
+    {
+      id: 11,
+      name: "Nashville"
+    }
   ],
   walkers: [
     {
